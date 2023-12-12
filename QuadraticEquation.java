@@ -22,6 +22,10 @@ public class QuadraticEquation {
         return c;
     }
 
+    public double getDelta(){
+        return (this.b*this.b-4*this.a*this.c);
+    }
+
     public double getRoot1(){
         return (-this.b+Math.pow((this.b*this.b-4*this.a*this.c),0.5))/(2*this.a);
     }

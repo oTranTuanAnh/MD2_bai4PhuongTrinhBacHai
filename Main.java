@@ -13,12 +13,11 @@ public class Main {
 
         QuadraticEquation pt = new QuadraticEquation(a, b, c);
 
-        double delta = b*b - 4*a*c;
-        if (delta>0){
+        if (pt.getDelta()>0){
             System.out.println("Phuong trinh co hai nghiem la: ");
             System.out.println("r1 = " + pt.getRoot1());
             System.out.println("r2 = " + pt.getRoot2());
-        } else if (delta ==0){
+        } else if (pt.getDelta()==0){
             System.out.println("Phuong trinh co nghiem la: " + pt.getRoot1());
         } else {
             System.out.println("Phuong trinh vo nghiem");
